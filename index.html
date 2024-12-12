@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Search Report</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Introduction Section -->
+    <section class="report-section">
+      <div class="intro-content">
+        <!-- Header Logo -->
+        <img src="top-logo.png" alt="Top Logo" class="top-logo">
+        
+        <div class="content">
+          <div class="content-inner">
+            <!-- Title and Description -->
+            <h1>AI Search Report <br> for eNavvi</h1>
+            <p class="description">
+              This is an interactive report that contains analysis of how eNavvi 
+              currently appears in ChatGPT, Perplexity, Claude, and other LLMs.
+            </p>
+
+            <!-- Keywords List -->
+            <div class="keywords">
+              <span class="keyword">Keywords</span> 
+              <span class="dot">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0L8 4L4 8L0 4L4 0Z" fill="currentColor"/>
+                </svg>
+              </span>
+              <span class="keyword">Correlations</span> 
+              <span class="dot">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0L8 4L4 8L0 4L4 0Z" fill="currentColor"/>
+                </svg>
+              </span>
+              <span class="keyword">User questions</span> 
+              <span class="dot">
+                <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4 0L8 4L4 8L0 4L4 0Z" fill="currentColor"/>
+                </svg>
+              </span>
+              <span class="keyword">Actionable recommendations</span>
+            </div>
+          </div>
+
+          <!-- Footer Logo -->
+          <div class="la-logo">
+            <img src="la-logo.svg" alt="Living Assets Logo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instructions Section -->
+    <section class="report-section">
+      <div class="instructions-content">
+        <div class="content content-centered">
+          <div class="content-inner">
+            <!-- Section Header -->
+            <h2>How to generate actionable insight from this report</h2>
+            <p class="description">
+              Drop the link into your preferred LLM and ask it to generate<br>
+              tables, documents, blog posts, etc.
+            </p>
+            
+            <!-- Step-by-Step Instructions -->
+            <div class="steps">
+              <!-- Step 1: Copy Link -->
+              <div class="step-container">
+                <p class="step-label">FIRST</p>
+                <h3 class="step-heading">Copy this link</h3>
+                <div class="link-container">
+                  <div class="link" id="currentUrl"></div>
+                  <button class="copy-btn">COPY</button>
+                </div>
+              </div>
+
+              <!-- Step 2: LLM Selection -->
+              <div class="step-container">
+                <p class="step-label">THEN</p>
+                <h3 class="step-heading">Paste it into ChatGPT or Claude</h3>
+                <div class="buttons">
+                  <a href="#" class="llm-btn chatgpt">
+                    <img src="chatgpt-icon.svg" alt="ChatGPT Icon">
+                    OPEN CHATGPT
+                  </a>
+                  <a href="#" class="llm-btn claude">
+                    <img src="claude-icon.svg" alt="Claude Icon">
+                    OPEN CLAUDE
+                  </a>
+                </div>
+              </div>
+
+              <!-- Important Note -->
+              <p class="description">
+                You'll need a paid version of the LLM (like ChatGPT+)<br>
+                for this report to work correctly
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="report-section pricing-section">
+      <h2>AI search is here to stay.<br>Get ahead with Living Assets Premium.</h2>
+      
+      <div class="pricing-cards">
+        <!-- Free tier card -->
+        <div class="pricing-card">
+          <div class="card-header">
+            <h2>Free</h2>
+            <span class="current-tier">CURRENT TIER</span>
+          </div>
+          <h3>Single website + 5 keywords</h3>
+          <div class="features">
+            <div class="feature">
+              <h4>ChatGPT only</h4>
+              <p class="description">Free report only covers your positioning in ChatGPT</p>
+            </div>
+            <div class="feature">
+              <h4>No tracking over time</h4>
+              <p class="description">Free&nbsp;report only&nbsp;observes a&nbsp;single snapshot in&nbsp;time</p>
+            </div>
+            <div class="feature">
+              <h4>No privacy settings</h4>
+              <p class="description">Free report doesn't include access controls</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Premium tier card -->
+        <div class="pricing-card premium">
+          <div class="card-header">
+            <h2>Premium</h2>
+          </div>
+          <h3>Unlimited websites + Unlimited keywords</h3>
+          <div class="features">
+            <div class="feature">
+              <div class="feature-icon rank-icon">
+                <img src="chart.svg" alt="Rank Icon" height="24">
+              </div>
+              <h4>Rank in Meta and Google AI</h4>
+              <p class="description">Improve position in Google's AI-powered search and optimize content for Meta's AI</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon track-icon">
+                <img src="tracking.svg" alt="Track Icon" height="24">
+              </div>
+              <h4>Track your AI marketing</h4>
+              <p class="description">Track performance over time and get insights with analytics dashboard</p>
+            </div>
+            <div class="feature">
+              <div class="feature-icon privacy-icon">
+                <img src="private.svg" alt="Privacy Icon" height="24">
+              </div>
+              <h4>Make reports private</h4>
+              <p class="description">Secure your reports with private access controls</p>
+            </div>
+          </div>
+          <a href="#" class="upgrade-btn">
+            <span>Upgrade</span>
+            <img src="arrow.svg" alt="Arrow Icon" height="24">
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
